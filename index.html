@@ -26,8 +26,10 @@
       border-radius: 32px;
     }
 
-    .btn1 {
-      text-align: center;
+    .bg-img {
+      background-image: url(assets/bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   </style>
 </head>
@@ -214,7 +216,7 @@
 
     </section>
     <!-- chalange part  -->
-    <section class="container space-y-6 lg:p-0 p-4 mx-auto">
+    <section class="container space-y-6  lg:p-0 p-4 mx-auto">
       <!-- part-1  -->
       <div class=" lg:w-1/2 mx-auto text-center  space-y-5">
         <button class=" mx-auto w-1/2 lg:w-auto bg-[#acef5f38] flex items-center space-x-4 p-2 ">
@@ -231,7 +233,7 @@
       <!-- part-2  -->
       <div class="flex gap-6 flex-col lg:flex-row items-center ">
         <div class="flex flex-col  lg:flex-row border  lg:items-center  p-5 bg-white rounded-xl gap-7">
-            <img src="assets/img1.png" class="w-full lg:w-2/4" alt="">
+          <img src="assets/img1.png" class="w-full lg:w-2/4" alt="">
           <div class="space-y-3">
             <h4 class="font-extrabold text-2xl ">Commercial</h4>
             <p class="text-[#737373]  font-medium">Commercial in-house design involves creating functional and
@@ -257,26 +259,60 @@
         </div>
         <div class="flex flex-col  lg:flex-row border  lg:items-center  p-5 bg-white rounded-xl gap-7">
           <img src="assets/img4.png" class="w-full lg:w-2/4" alt="">
-        <div class="space-y-3">
-          <h4 class="font-extrabold text-2xl ">Commercial</h4>
-          <p class="text-[#737373]  font-medium">Commercial in-house design involves creating functional and
-            aesthetically pleasing spaces within commercial buildings, tailored to the specific needs of the
-            business and its clientele.</p>
-          <button class="flex border-none space-x-2 w-full lg:w-auto items-center">
-            <a class="text-xl font-extrabold">Book Consult</a>
+          <div class="space-y-3">
+            <h4 class="font-extrabold text-2xl ">Commercial</h4>
+            <p class="text-[#737373]  font-medium">Commercial in-house design involves creating functional and
+              aesthetically pleasing spaces within commercial buildings, tailored to the specific needs of the
+              business and its clientele.</p>
+            <button class="flex border-none space-x-2 w-full lg:w-auto items-center">
+              <a class="text-xl font-extrabold">Book Consult</a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="lg:size-7 size-8 rounded-full p-1 bg-[#ABEF5F]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="rounded-xl border w-full lg:w-2/4   p-5">
+          <img src="assets/img5.png" class="w-full" alt="">
+        </div>
+      </div>
+      <div class="rounded-xl border lg:hidden w-full lg:w-2/4   p-5">
+        <img src="assets/img5.png" class="w-full" alt="">
+      </div>
+    </section>
+    <!-- Discuss project  -->
+    <section class="bg-img lg:my-24 my-10 py-24">
+      <div class="container space-y-4  lg:p-0 p-4  mx-auto">
+        <div class=" lg:w-1/2 mx-auto text-center  space-y-5">
+          <button class=" mx-auto w-1/2  lg:w-auto bg-[#acef5f38] flex items-center space-x-4 p-2 ">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-              stroke="currentColor" class="lg:size-7 size-8 rounded-full p-1 bg-[#ABEF5F]">
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+            <p class="font-bold">Let’s Connect</p>
+          </button>
+          <h2 class="text-4xl font-bold">Let’s Discuss Next Project</h2>
+          <p class="font-medium ">It helps you visualize and plan your next home design project, offering tools and
+            resources to guide you through the process./p>
+        </div>
+        <div class="lg:w-2/3 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <input type="text" class="rounded-[64px] outline-none h-16 p-5" placeholder="First Name*">
+          <input type="text" class="rounded-[64px] outline-none h-16 p-5" placeholder="Last Name*">
+          <input type="number" class="rounded-[64px] outline-none h-16 p-5" placeholder="Phone Number*">
+          <input type="text" class="rounded-[64px] outline-none h-16 p-5" placeholder="Email Number*">
+          <textarea name="" rows="6" class="rounded-[32px] lg:col-span-2 outline-none p-5"
+            placeholder="Write your message here" id=""></textarea>
+        </div>
+        <div>
+          <button class="flex w-full  lg:w-2/3 bg-[#ABEF5F] mx-auto justify-center px-5 py-3 space-x-2  items-center">
+            <a class="text-xl font-extrabold text-center">Book Consult</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-7 rounded-full p-1 text-white bg-[#1C1C1C]">
               <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
             </svg>
           </button>
         </div>
-      </div>
-      <div class="rounded-xl border w-full lg:w-2/4   p-5">
-        <img src="assets/img5.png" class="w-full" alt="">
-      </div>
-      </div>
-      <div class="rounded-xl border lg:hidden w-full lg:w-2/4   p-5">
-        <img src="assets/img5.png" class="w-full" alt="">
       </div>
     </section>
   </main>
