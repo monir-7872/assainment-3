@@ -1,117 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assainment number 3</title>
-    <!-- daisyUI component link  --> 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- tailwindcss link  --> 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- customize daisyUI component  --> 
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>assainment number 3</title>
+  <!-- daisyUI component link  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- tailwindcss link  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- customize daisyUI component  -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
-      <style>
-        button{
-          border-radius: 32px;
-        }
-      </style>
+      }
+    }
+  </script>
+  <style>
+    button {
+      border-radius: 32px;
+    }
+    .btn1{
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-    <header class="bg-gradient-to-b from-[#e3edf8] to-[#ffffff]">
-        <div class="container mx-auto">
-          <nav>
-            <div class="navbar bg-[#e3edf8] bg-base-100">
-                <div class="navbar-start">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lg:size-7 size-8 rounded-full p-1 bg-[#ABEF5F]">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                  </svg>
-                  
-                  <a class="btn btn-ghost text-3xl">Rinterio</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class=" space-x-6 menu-horizontal text-[#7373] px-1">
-                        <li class="hover:font-extrabold text-[#494949] duration-300"><a>Home</a></li>
-                        <li class="hover:font-extrabold text-[#494949] duration-300"><a>Services</a></li>
-                        <li class="hover:font-extrabold text-[#494949] duration-300"><a>Portfolio</a></li>
-                        <li class="hover:font-extrabold text-[#494949] duration-300"><a>Blogs</a></li>
-                        <li class="hover:font-extrabold text-[#494949] duration-300"><a>Contact Us</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end space-x-6">
-                  <div class="lg:flex hidden lg:space-x-6">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                    </svg>
+  <header class="bg-gradient-to-b from-[#e3edf8] to-[#ffffff]">
+    <div class="container mx-auto">
+      <nav>
+        <div class="navbar bg-[#e3edf8] bg-base-100">
+          <div class="navbar-start">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="lg:size-7 size-8 rounded-full p-1 bg-[#ABEF5F]">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
 
-                  </div>
-                  
-                  
-                  <button class="lg:flex lg:bg-[#ABEF5F] lg:px-5 lg:py-3 lg:space-x-2 hidden lg:items-center">
-                    <a class="text-xl font-extrabold">Book Consult</a>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 rounded-full p-1 text-white bg-[#1C1C1C]">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                    </svg>
-                  </button>
-                </div>
-                <div class="dropdown lg:hidden ">
-                  <div tabindex="0" role="button" class="btn btn-ghost ">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                    
-                  </div>
-                  <ul
-                    tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    
-                      <ul class="p-2">
-                        <li><a>Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>Blogs</a></li>
-                        <li><a>Contact Us</a></li>
-                     
-                  </ul>
-                </div>
-              </div>
-        </nav>
-        <!-- banner -->
-        <div class="text-center flex p-8 justify-center items-center flex-col mx-auto">
-          <img src="assets/banner.png" alt="">
-            
-              <h1 class="text-6xl lg:w-11/12 font-extrabold">A barn house of this design has a striking appearance</h1>
-              <p class="py-6 lg:w-8/12">
-                Its open floor plan and large windows create a spacious and inviting atmosphere, while its exterior features, such as exposed beams and a gabled roof, evoke a timeless rural aesthetic.
-              </p>
-              <button class="flex bg-[#acef5f7e] lg:px-5  lg:py-3 space-x-2 text-center justify-center w-full lg:w-auto items-center">
-                <a class="text-xl font-extrabold">Book Consult</a>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="lg:size-7 size-8 rounded-full p-1 bg-[#ABEF5F]">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                </svg>
-              </button>
-            
-          
+            <a class="btn btn-ghost text-3xl">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class=" space-x-6 menu-horizontal text-[#7373] px-1">
+              <li class="hover:font-extrabold text-[#494949] duration-300"><a>Home</a></li>
+              <li class="hover:font-extrabold text-[#494949] duration-300"><a>Services</a></li>
+              <li class="hover:font-extrabold text-[#494949] duration-300"><a>Portfolio</a></li>
+              <li class="hover:font-extrabold text-[#494949] duration-300"><a>Blogs</a></li>
+              <li class="hover:font-extrabold text-[#494949] duration-300"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-6">
+            <div class="lg:flex hidden lg:space-x-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+
+            </div>
+
+
+            <button class="lg:flex lg:bg-[#ABEF5F] lg:px-5 lg:py-3 lg:space-x-2 hidden lg:items-center">
+              <a class="text-xl font-extrabold">Book Consult</a>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-7 rounded-full p-1 text-white bg-[#1C1C1C]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+            </button>
+          </div>
+          <div class="dropdown lg:hidden ">
+            <div tabindex="0" role="button" class="btn btn-ghost ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+
+              <ul class="p-2">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+
+              </ul>
+          </div>
         </div>
+      </nav>
+      <!-- banner -->
+      <div class="text-center flex p-8 justify-center items-center flex-col mx-auto">
+        <img src="assets/banner.png" alt="">
+
+        <h1 class="text-6xl lg:w-11/12 font-extrabold">A barn house of this design has a striking appearance</h1>
+        <p class="py-6 lg:w-8/12">
+          Its open floor plan and large windows create a spacious and inviting atmosphere, while its exterior features,
+          such as exposed beams and a gabled roof, evoke a timeless rural aesthetic.
+        </p>
+        <button
+          class="flex bg-[#acef5f7e] lg:px-5  lg:py-3 space-x-2 text-center justify-center w-full lg:w-auto items-center">
+          <a class="text-xl font-extrabold">Book Consult</a>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="lg:size-7 size-8 rounded-full p-1 bg-[#ABEF5F]">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+          </svg>
+        </button>
+
+
+      </div>
+    </div>
+  </header>
+  <main> 
+    <section class="bg-[#eef4fa] ">
+      <!-- About us  -->
+      <div class="container mx-auto lg:flex items-center lg:py-24 lg:space-x-5 lg:p-0 p-4 lg:space-y-0 space-y-5 ">
+        <div class="space-y-7 relative flex-1">
+          <img src="assets/Vector.png" class="lg:absolute lg:-top-9 lg:-left-9 invisible lg:visible " alt="">
+          <button class="justify-center mx-auto lg:mx-0 flex items-center space-x-4 bg-white p-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+            <p class="font-bold">About Us</p>
+          </button>
+          <h2 class="text-4xl text-center lg:text-left font-bold">We design thoughtful, liveable spaces</h2>
+          <p class="font-medium text-center lg:text-left"> We specialize in creating functional and aesthetically
+            pleasing living environments that prioritize comfort and well-being.</p>
+          <div class="flex lg:items-center p-5 bg-white rounded-2xl space-x-7">
+            <div>
+              <img  class=" lg:h-24 "  src="assets/commercial.png" class="" alt="">
+            </div>
+            <div>
+              <h4 class="font-extrabold text-xl ">Commercial</h4>
+              <p class="text-[#737373] font-medium">Commercial in-house design involves creating functional and
+                aesthetically pleasing spaces within commercial buildings, tailored to the specific needs of the
+                business and its clientele.</p>
+            </div>
+          </div>
+          <div class="flex lg:items-center p-5 bg-white rounded-2xl space-x-7">
+            <div>
+              <img class=" lg:h-24 " src="assets/residential.png" alt="">
+            </div>
+            <div>
+              <h4 class="font-extrabold text-xl ">Residential</h4>
+              <p class="text-[#737373] font-medium">Residential house design involves planning and creating living
+                spaces that are comfortable, functional, and aesthetically pleasing, tailored to individual needs and
+                preferences.</p>
+            </div>
+          </div>
         </div>
-    </header>
-    <main>
+        <div class="flex-1 rounded-2xl">
+          <img src="assets/Rectangle.png" alt="">
+        </div>
 
-    </main>
-    <footer>
+      </div>
+      <!-- our work process -->
 
-    </footer>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
