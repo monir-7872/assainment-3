@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>assainment number 3</title>
+  <!-- Manrop font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
   <!-- daisyUI component link  -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <!-- tailwindcss link  -->
@@ -26,6 +30,12 @@
       border-radius: 32px;
     }
 
+    .manrope-font {
+      font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
     .bg-img {
       background-image: url(assets/bg.jpg);
       background-repeat: no-repeat;
@@ -34,7 +44,7 @@
   </style>
 </head>
 
-<body>
+<body class="manrope-font">
   <header class="bg-gradient-to-b from-[#e3edf8] to-[#ffffff]">
     <div class="container mx-auto">
       <nav>
@@ -88,16 +98,6 @@
               </svg>
 
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-
-              <ul class="p-2">
-                <li><a>Home</a></li>
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
-
-              </ul>
           </div>
         </div>
       </nav>
@@ -126,7 +126,7 @@
   <main>
     <section class="bg-[#eef4fa] ">
       <!-- About us  -->
-      <div class="container mx-auto lg:flex items-center lg:py-24 lg:space-x-5 lg:p-0 p-4 lg:space-y-0 space-y-5 ">
+      <div class="container mx-auto lg:flex items-center lg:py-24 lg:space-x-7 lg:p-0 p-4 lg:space-y-0 space-y-5 ">
         <div class="space-y-7 relative flex-1">
           <img src="assets/Vector.png" class="lg:absolute lg:-top-9 lg:-left-9 invisible lg:visible " alt="">
           <button class="justify-center mx-auto lg:mx-0 flex items-center space-x-4 bg-white p-2 ">
@@ -281,8 +281,30 @@
         <img src="assets/img5.png" class="w-full" alt="">
       </div>
     </section>
+    <!-- new section  -->
+    <section>
+      <div class="container mx-auto lg:flex items-center lg:py-24 lg:space-x-7 lg:p-0 p-4 lg:space-y-0 space-y-5 ">
+        <div>
+          <img src="assets/passion.webp" alt="">
+        </div>
+        <div class="space-y-9 flex-1">
+          <h1 class="text-4xl font-bold">We Always Look For Creative Design</h1>
+          <p class="font-medium ">Creative house design is essential for creating a unique and personalized living
+            space. It involves innovative use of materials, layout, and decor to reflect your individual style and
+            preferences. By incorporating creative elements, you can transform your home into a functional and visually
+            appealing sanctuary that truly feels like yours.</p>
+          <button class="flex w-full  lg:w-auto bg-[#ABEF5F] mx-auto justify-center px-5 py-3 space-x-2  items-center">
+            <a class="text-xl font-extrabold text-center">Chek Out</a>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-7 rounded-full p-1 text-white bg-[#1C1C1C]">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
     <!-- Discuss project  -->
-    <section class="bg-img lg:mb-0 lg:mt-24 mt-10 py-24">
+    <section class="bg-img lg:mb-0 mt-10 py-24">
       <div class="container space-y-4  lg:p-0 p-4  mx-auto">
         <div class=" lg:w-1/2 mx-auto text-center  space-y-5">
           <button class=" mx-auto w-1/2  lg:w-auto bg-[#acef5f38] flex items-center space-x-4 p-2 ">
@@ -323,21 +345,22 @@
           class="lg:size-7 size-8 rounded-full p-1 bg-[#ABEF5F]">
           <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
         </svg>
-  
+
         <a class="btn btn-ghost text-white text-3xl">Rinterio</a>
       </button>
-      <p class="text-[#737373] font-medium">It offers a vast collection of interior design inspiration, including photos, ideas, and trends.</p>
+      <p class="text-[#737373] font-medium">It offers a vast collection of interior design inspiration, including
+        photos, ideas, and trends.</p>
       <div class="flex lg:justify-around lg:w-2/3 mx-auto lg:flex-row flex-col gap-10 text-[#E9E9E9] justify-center">
-       <a href="">Home</a>
-       <a href="">Services</a>
-       <a href="">Portfolio</a>
-       <a href="">Blogs</a>
-       <a href="">Contact</a>
+        <a href="">Home</a>
+        <a href="">Services</a>
+        <a href="">Portfolio</a>
+        <a href="">Blogs</a>
+        <a href="">Contact</a>
       </div>
       <button class="flex w-full  lg:w-auto bg-[#ABEF5F] mx-auto justify-center px-5 py-3 space-x-2  items-center">
         <a class="text-xl font-extrabold text-center">Book Consult</a>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-          stroke="currentColor" class="size-7 rounded-full p-1 text-white bg-[#1C1C1C]">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-7 rounded-full p-1 text-white bg-[#1C1C1C]">
           <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
         </svg>
       </button>
